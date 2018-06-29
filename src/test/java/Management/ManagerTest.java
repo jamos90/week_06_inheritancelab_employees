@@ -48,6 +48,12 @@ public class ManagerTest {
          assertEquals(35000, manager.getSalary(),0.01);
      }
 
+     @Test
+    public void cannotRaiseSalaryByNegative(){
+         manager.raiseSalary(-400);
+         assertEquals(30000, manager.getSalary(), 0.01);
+     }
+
 
 
 
